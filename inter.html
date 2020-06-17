@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0; padding:0; box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+        .container{
+            width: 100%;
+    height: 100vh;
+            background:url(coronavirus-4914028_1920.jpg);
+        }
+        nav{
+    
+    width: 100%; height: 100px;
+    /*background-color:  red;*/
+    display: flex; color: white;
+    
+}
+
+.logo{
+    width: 30%;
+    height: 100px;
+}
+
+.logo h1{
+    line-height: 90px;
+    padding-left: 10px;
+    margin-top: 15px;
+    margin-left:50px;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 2rem;
+    border-left: solid 3px white;
+}
+.menu{
+    margin: 0 auto;
+    margin-top: 15px;
+    
+}
+.menu ul{
+    padding: 0;
+    margin: 0;
+    float: right;
+   /*margin-right: 10px; */   
+ }
+ .menu ul li{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+  }
+.menu li a{
+    text-decoration: none;
+    position: relative;
+    color:white;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: sans-serif;
+    display: block;
+    overflow: hidden;
+    transition: 0.7s all;
+   /* padding: 30px 30px;*/
+   padding-top: 40px;
+   padding-left: 40px;
+   padding-bottom: 18px;
+    text-transform: uppercase;
+  }
+  .menu li a:before{
+    content: '';
+    width: 60px;
+    position: absolute;
+    border-bottom: 4px solid white;
+    bottom: 0;
+    right: 350px;
+    transition: 0.7s all;
+  }
+  .menu li a:hover:before{
+    right: 0;
+
+  }  
+  .text{
+      padding: 100px;
+  }
+  .text p {
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+    color: azure;
+  }
+  .footer-main-div{
+      width:100%;
+      height:auto;
+      margin:auto;
+      background: #272727;
+      padding:20px 0px;
+  }
+  .footer-social-icons{
+      width:100%;
+      height:auto;
+      margin:auto;
+
+  }
+  .footer-social-icons ul{
+      margin:0px;
+      padding:10px;
+      text-align:center;
+
+  }
+  .footer-social-icons ul li{
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      margin: 0px 10px;
+      background-color: #00C6A7;
+      border-radius:100%;
+      
+
+  }
+  .footer-social-icons ul li a{
+      color:#272727 ;
+      font-size:25px;
+  }
+  .footer-social-icons ul li a i{
+line-height: 50px;  
+}
+
+.footer-social-icons h1 {
+    padding-top: 10px;
+    padding-left: 420px;
+    padding-bottom: 20px;
+    color: #00C6A7;
+    font-size: 3rem;
+}
+.footer-social-icons p{
+    padding-top: 10px;
+    padding-left: 490px;
+    padding-bottom: 20px;
+    color: #00C6A7;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <nav>
+        <div class="logo">
+         <h1>Pack & Go</h1>
+        </div>
+        <div class="menu"> 
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home" style="font-size:18px;padding-right:8px;"></i> Accueil</a></li>
+                <li ><a href="voyageMaroc.php"class="vm"><i class="fas fa-route" style="font-size:18px;padding-right:8px;"></i> Voyage Maroc</a></li>
+                <li><a href="inter.html"><i class="fas fa-globe-africa" style="font-size:18px;padding-right:8px;"></i> Voyage International</a></li>
+                <li><a href="contact.php"><i class="far fa-envelope"style="font-size:18px;padding-right:8px;"></i> contact Us</a></li>
+               </ul>
+        </div>
+       </nav>
+       <div class="text">
+           <p>Votre santé, notre priorité :</p>
+              <p> fermeture des voyages international jusqu'à nouvel order
+           </p>
+       </div>
+    </div>
+    <div class="footer-main-div">
+        <div class="footer-social-icons">
+            <h1>Contact Us</h1>
+            <ul>
+            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href=""><i class="fas fa-phone"></i></a></li>
+            </ul>
+            <p>
+     Réalisé par :<br><br>Sanae ALLAM <br> Khaoula NOURESSAID <br><br><br>
+    Encadré par :<br><br>
+    Pr.MAATOUGUI Lamyae
+            </p>
+        </div>
+    
+    </div>
+</body>
+</html>

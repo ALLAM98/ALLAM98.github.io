@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background: url(action-blur-car-child-386009.jpg);
+-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+background-size:cover;
+   
+   }
+   .logo{
+    width: 30%;
+    height: 100px;
+}
+
+.logo h1{
+    line-height: 70px;
+    padding-left: 10px;
+    margin-top: 15px;
+    margin-left:50px;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 2rem;
+    border-left: solid 3px #fff;
+}
+nav{
+    
+  width: 100%; height: 100px;
+  /*background-color:  red;*/
+  display: flex; color: white;
+  background-color: rgba(0, 0, 0, .3);
+  box-shadow:1px 2px 10px 5px rgba(8, 8, 8,.4);
+
+  
+}
+.menu{
+    margin: 0 auto;
+    
+}
+.menu ul{
+    padding: 0;
+    margin: 0;
+    float: right;
+   /*margin-right: 10px; */  
+   margin-left: 250px;
+ 
+ }
+ .menu ul li{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+  }
+.menu li a{
+    text-decoration: none;
+    position: relative;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 710;
+    font-family: sans-serif;
+    display: block;
+    overflow: hidden;
+    transition: 0.7s all;
+   /* padding: 30px 30px;*/
+   padding-top: 40px;
+   padding-left: 40px;
+   padding-bottom: 18px;
+    text-transform: uppercase;
+  }
+  .menu li a:before{
+    content: '';
+    width: 60px;
+    position: absolute;
+    border-bottom: 4px solid white;
+    bottom: 0;
+    right: 350px;
+    transition: 0.7s all;
+  }
+  .menu li a:hover:before{
+    right: 0;
+  } 
+
+.container{
+  margin-top: 75px;
+    width: 90vw;
+    height:80vh;
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 2rem;
+}
+.contact-us{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+     width: 500px;
+   margin-top: -100px;
+}
+.form{
+   
+    background:rgba(255, 255, 255, 0.247);
+    box-shadow:1px 2px 10px 5px rgb(8, 8, 8);
+    padding: 50px;
+    border-radius: 30px;
+    position: relative;
+}
+.form h1{
+    font-size: 25px;
+    color: #535274;
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .form,
+  .form-items{
+    width: 100%;
+  }
+  .form-items .input{
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    background:rgba(255, 255, 255, .8);
+    border: 0px;
+    outline: none;
+    border-radius: 30px;
+  }
+  
+  .form-items .input.message{
+    height: 125px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    padding: 15px 15px;
+    resize: none;
+  }
+  
+  .btn{
+    background:rgba(73, 128, 125, 0.5);
+    text-align: center;
+    color: #fff;
+    font-weight: 710;
+    padding: 12px;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  .btn:hover{
+    background: rgb(152, 236, 232);
+    color: rgb(77, 75, 75);
+  }
+  .btn .fas{
+    margin-left: 10px;
+    font-size: 12px;
+  }
+  
+  .form-items{
+    position: relative;
+  }
+  
+  .form-items .fas{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: #9a99aa;
+  }
+  
+  .social-icons{
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    width: 200px;
+    transform: translateX(70%);
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .social-icons div{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  
+  .social-icons div .fab{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+  }
+  
+  .social-icons div.facebook{
+    background: #5178d9;
+  }
+  
+  .social-icons div.twitter{
+    background: #41caf6;
+  }
+  
+  .social-icons div.google{
+    background: #fb4f4f;
+  }
+
+
+
+  .contact-info{
+    padding-left: 150px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: -50px;
+  }
+.card{
+  
+  padding: 0 20px;
+  margin: 0 10px;
+  width: calc(33% - 20px);
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.card-icon{
+  font-size: 28px;
+  color: white;
+  background: #ff6348;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px !important;
+  border-radius: 50%;
+  transition: 0.3s linear;
+}
+
+.card:hover .card-icon{
+  background: none;
+  color: #ff6348;
+  transform: scale(1.6);
+}
+
+.card p{
+  margin-top: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  max-height: 0;
+  opacity: 0;
+  transition: 0.3s linear;
+}
+
+.card:hover p{
+  max-height: 40px;
+  opacity: 1;
+}
+
+
+@media screen and (max-width:800px) {
+  .contact-info{
+    flex-direction: column;
+  }
+  .card{
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+  }
+}
+
+
+
+

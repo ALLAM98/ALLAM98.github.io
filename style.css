@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
+
+*{
+    margin: 0; padding:0; box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+.site-header {
+    width: 100%;
+    height: 100vh;
+    background: #0f8a9d;
+    background: linear-gradient(87deg, #00C6A7 , #1E4D92 ); 
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+
+}
+
+
+nav{
+    
+    width: 100%; height: 100px;
+    /*background-color:  red;*/
+    display: flex; color: white;
+    
+}
+
+.logo{
+    width: 30%;
+    height: 100px;
+}
+
+.logo h1{
+    line-height: 90px;
+    padding-left: 10px;
+    margin-top: 15px;
+    margin-left:50px;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 2rem;
+    border-left: solid 3px white;
+}
+.menu{
+    margin: 0 auto;
+    margin-top: 15px;
+    
+}
+.menu ul{
+    padding: 0;
+    margin: 0;
+    float: right;
+   /*margin-right: 10px; */   
+ }
+ .menu ul li{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+  }
+.menu li a{
+    text-decoration: none;
+    position: relative;
+    color:white;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: sans-serif;
+    display: block;
+    overflow: hidden;
+    transition: 0.7s all;
+   /* padding: 30px 30px;*/
+   padding-top: 40px;
+   padding-left: 40px;
+   padding-bottom: 18px;
+    text-transform: uppercase;
+  }
+  .menu li a:before{
+    content: '';
+    width: 60px;
+    position: absolute;
+    border-bottom: 4px solid white;
+    bottom: 0;
+    right: 350px;
+    transition: 0.7s all;
+  }
+  .menu li a:hover:before{
+    right: 0;
+  }  
+/*.menu{
+    width: 50%; height: 100px;
+}
+
+.menu ul{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:  center;
+}
+
+.menu ul li{
+    list-style: none;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+*/
+section{ display: flex;  }
+
+.leftside { width: 45%; height: auto; overflow: hidden; margin-top: 20px;}
+
+.leftside img{  width: 500px;  height: 400px; padding-left: 50px; }
+
+.rightside{ width: 55%; height: 300px; color: white; text-align: center; margin-top: 80px; padding: 40px;}
+
+.rightside h1{ 
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    color: transparent;
+    font-size: 5rem;
+    background: url(maldives-1993704_1280.jpg);
+    background-position:bottom;
+    -webkit-background-clip: text; } 
+
+.rightside p {  
+    font-size: 2rem; padding: 10px 0;
+    font-family: 'Caveat', cursive;
+}
+
+
+.all{
+    box-shadow:1px 2px 10px 5px rgb(8, 8, 8,.4);
+
+    border-radius: 25px;
+    position: relative;
+    margin: 50px;
+    background: url(oia-416136_1280.jpg) no-repeat;
+     background-position: center;
+     background-size: cover;
+     height: 70vh;
+     transition: all .9s;
+     animation: slider 12s infinite linear;
+   }
+   @keyframes slider{
+     0%{
+       background-image:url(mosque-615415_1280.jpg);
+     }
+     35%{
+       background-image: url(ship-952292_1280.jpg);
+     }
+     75%{
+       background-image: url(architecture-1868667_1280.jpg);
+     }
+   }
+   .text{
+       width:400px;
+       border-radius: 12px;
+     
+       padding: 50px;
+    align-items: center;
+        
+   }
+   .text p{
+       color: white;
+       font-family: 'Marck Script', cursive;  
+        font-size:1.36rem;    
+        background-color:rgba(0,198,167,0.5);
+       
+    }
+   .station h1{
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    color: transparent;
+    font-size: 5.54rem;
+    background: url(maldives-1993704_1280.jpg);
+    background-position:bottom;
+    -webkit-background-clip: text;
+   }
+
+   footer{
+  
+    position: relative;
+    bottom:0px;
+    width: 100%;
+    background: rgba(6,49,70,.7);
+  }
+  .main-content{
+    box-shadow:1px 2px 10px 5px rgb(8, 8, 8,.4);
+    margin-top: 25px;
+    color: white;
+    display: flex;
+    width: 100%;
+    line-height: 2.7em;
+  }
+  .main-content .box{
+    float: 50%;
+    padding: 10px 20px;
+  }
+  .box h2{
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding-left: 10px;
+    color: #063146;
+    text-transform: uppercase;
+  }
+  .box .content{
+    margin: 20px 0 0 0;
+    padding-right: 50px;
+  }
+  .left .content .social a{
+    padding:0 2px;
+  }
+  .left{
+    width: 350px;
+  }
+  .left .content .social a span{
+    height: 40px;
+    width: 40px;
+    background: #063146;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    color: white;
+    transition: .3s;
+  }
+  .left .content .social a span:hover{
+  background: #f12020;
+  }
+  .left .content p{
+    text-align: justify;
+  }
+  .conception{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+  }
+  
+  .conception p{
+  text-align:center;
+  font-size: 15px;
+  color: #063146;
+  }
+  .btn button{
+    font-size: 13px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 70px;
+    padding-left: 70px;
+    border-radius: 5px;
+    color: #042331;
+  }
+
+  .footer-main-div{
+      width:100%;
+      height:auto;
+      margin:auto;
+      background: #6b6262;
+      padding:20px 0px;
+      box-shadow: 1px 2px 10px 5px rgba(6,49,70,.7);
+
+  }
+  .footer-social-icons{
+      width:100%;
+      height:auto;
+      margin:auto;
+
+  }
+  .footer-social-icons ul{
+      margin:0px;
+      padding:10px;
+      text-align:center;
+
+  }
+  .footer-social-icons ul li{
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      margin: 0px 10px;
+      background-color: #00C6A7;
+      border-radius:100%;
+      
+
+  }
+  .footer-social-icons ul li a{
+      color:#272727 ;
+      font-size:25px;
+  }
+  .footer-social-icons ul li a i{
+line-height: 50px;  
+}
+
+.footer-social-icons h1 {
+    padding-top: 10px;
+    padding-left: 420px;
+    padding-bottom: 20px;
+    color: #00C6A7;
+    font-size: 3rem;
+}
+.footer-social-icons p{
+    padding-top: 10px;
+    padding-left: 490px;
+    padding-bottom: 20px;
+    color: #00C6A7;
+}
